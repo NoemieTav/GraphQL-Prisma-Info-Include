@@ -1,0 +1,521 @@
+{
+  "fieldName": "listFriends",
+  "fieldNodes": [
+    {
+      "kind": "Field",
+      "name": {
+        "kind": "Name",
+        "value": "listFriends",
+        "loc": {
+          "start": 4,
+          "end": 15
+        }
+      },
+      "arguments": [
+        {
+          "kind": "Argument",
+          "name": {
+            "kind": "Name",
+            "value": "userJwt",
+            "loc": {
+              "start": 16,
+              "end": 23
+            }
+          },
+          "value": {
+            "kind": "StringValue",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhQGEuYSIsImlhdCI6MTU5NDg4MzAxOX0.zw3dcJAlM38Wi7tpxkoSL9Qrmq0aPaWWfRgJzGb0EJE",
+            "block": false,
+            "loc": {
+              "start": 25,
+              "end": 167
+            }
+          },
+          "loc": {
+            "start": 16,
+            "end": 167
+          }
+        }
+      ],
+      "directives": [],
+      "selectionSet": {
+        "kind": "SelectionSet",
+        "selections": [
+          {
+            "kind": "Field",
+            "name": {
+              "kind": "Name",
+              "value": "data",
+              "loc": {
+                "start": 175,
+                "end": 179
+              }
+            },
+            "arguments": [],
+            "directives": [],
+            "selectionSet": {
+              "kind": "SelectionSet",
+              "selections": [
+                {
+                  "kind": "Field",
+                  "name": {
+                    "kind": "Name",
+                    "value": "friends",
+                    "loc": {
+                      "start": 188,
+                      "end": 195
+                    }
+                  },
+                  "arguments": [],
+                  "directives": [],
+                  "selectionSet": {
+                    "kind": "SelectionSet",
+                    "selections": [
+                      {
+                        "kind": "Field",
+                        "name": {
+                          "kind": "Name",
+                          "value": "id",
+                          "loc": {
+                            "start": 206,
+                            "end": 208
+                          }
+                        },
+                        "arguments": [],
+                        "directives": [],
+                        "loc": {
+                          "start": 206,
+                          "end": 208
+                        }
+                      },
+                      {
+                        "kind": "Field",
+                        "name": {
+                          "kind": "Name",
+                          "value": "friends",
+                          "loc": {
+                            "start": 217,
+                            "end": 224
+                          }
+                        },
+                        "arguments": [],
+                        "directives": [],
+                        "selectionSet": {
+                          "kind": "SelectionSet",
+                          "selections": [
+                            {
+                              "kind": "Field",
+                              "name": {
+                                "kind": "Name",
+                                "value": "id",
+                                "loc": {
+                                  "start": 237,
+                                  "end": 239
+                                }
+                              },
+                              "arguments": [],
+                              "directives": [],
+                              "loc": {
+                                "start": 237,
+                                "end": 239
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": 225,
+                            "end": 249
+                          }
+                        },
+                        "loc": {
+                          "start": 217,
+                          "end": 249
+                        }
+                      }
+                    ],
+                    "loc": {
+                      "start": 196,
+                      "end": 257
+                    }
+                  },
+                  "loc": {
+                    "start": 188,
+                    "end": 257
+                  }
+                },
+                {
+                  "kind": "Field",
+                  "name": {
+                    "kind": "Name",
+                    "value": "id",
+                    "loc": {
+                      "start": 264,
+                      "end": 266
+                    }
+                  },
+                  "arguments": [],
+                  "directives": [],
+                  "loc": {
+                    "start": 264,
+                    "end": 266
+                  }
+                }
+              ],
+              "loc": {
+                "start": 180,
+                "end": 272
+              }
+            },
+            "loc": {
+              "start": 175,
+              "end": 272
+            }
+          },
+          {
+            "kind": "Field",
+            "name": {
+              "kind": "Name",
+              "value": "error",
+              "loc": {
+                "start": 277,
+                "end": 282
+              }
+            },
+            "arguments": [],
+            "directives": [],
+            "selectionSet": {
+              "kind": "SelectionSet",
+              "selections": [
+                {
+                  "kind": "Field",
+                  "name": {
+                    "kind": "Name",
+                    "value": "type",
+                    "loc": {
+                      "start": 291,
+                      "end": 295
+                    }
+                  },
+                  "arguments": [],
+                  "directives": [],
+                  "loc": {
+                    "start": 291,
+                    "end": 295
+                  }
+                }
+              ],
+              "loc": {
+                "start": 283,
+                "end": 301
+              }
+            },
+            "loc": {
+              "start": 277,
+              "end": 301
+            }
+          }
+        ],
+        "loc": {
+          "start": 169,
+          "end": 305
+        }
+      },
+      "loc": {
+        "start": 4,
+        "end": 305
+      }
+    }
+  ],
+  "returnType": "UsersReturn",
+  "parentType": "Query",
+  "path": {
+    "key": "listFriends"
+  },
+  "schema": {
+    "__validationErrors": [],
+    "__allowedLegacyNames": [],
+    "_queryType": "Query",
+    "_mutationType": "Mutation",
+    "_subscriptionType": "Subscription",
+    "_directives": [
+      "@skip",
+      "@include",
+      "@deprecated"
+    ],
+    "_typeMap": {
+      "Query": "Query",
+      "String": "String",
+      "ID": "ID",
+      "GamesReturn": "GamesReturn",
+      "Game": "Game",
+      "User": "User",
+      "Error": "Error",
+      "JSONObject": "JSONObject",
+      "UsersReturn": "UsersReturn",
+      "UserReturn": "UserReturn",
+      "Mutation": "Mutation",
+      "UserReturnJWT": "UserReturnJWT",
+      "GameReturn": "GameReturn",
+      "MoveInput": "MoveInput",
+      "Button": "Button",
+      "Action": "Action",
+      "MoveReturn": "MoveReturn",
+      "Move": "Move",
+      "Subscription": "Subscription",
+      "__Schema": "__Schema",
+      "__Type": "__Type",
+      "__TypeKind": "__TypeKind",
+      "Boolean": "Boolean",
+      "__Field": "__Field",
+      "__InputValue": "__InputValue",
+      "__EnumValue": "__EnumValue",
+      "__Directive": "__Directive",
+      "__DirectiveLocation": "__DirectiveLocation"
+    },
+    "_possibleTypeMap": {},
+    "_implementations": {}
+  },
+  "fragments": {},
+  "operation": {
+    "kind": "OperationDefinition",
+    "operation": "query",
+    "variableDefinitions": [],
+    "directives": [],
+    "selectionSet": {
+      "kind": "SelectionSet",
+      "selections": [
+        {
+          "kind": "Field",
+          "name": {
+            "kind": "Name",
+            "value": "listFriends",
+            "loc": {
+              "start": 4,
+              "end": 15
+            }
+          },
+          "arguments": [
+            {
+              "kind": "Argument",
+              "name": {
+                "kind": "Name",
+                "value": "userJwt",
+                "loc": {
+                  "start": 16,
+                  "end": 23
+                }
+              },
+              "value": {
+                "kind": "StringValue",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhQGEuYSIsImlhdCI6MTU5NDg4MzAxOX0.zw3dcJAlM38Wi7tpxkoSL9Qrmq0aPaWWfRgJzGb0EJE",
+                "block": false,
+                "loc": {
+                  "start": 25,
+                  "end": 167
+                }
+              },
+              "loc": {
+                "start": 16,
+                "end": 167
+              }
+            }
+          ],
+          "directives": [],
+          "selectionSet": {
+            "kind": "SelectionSet",
+            "selections": [
+              {
+                "kind": "Field",
+                "name": {
+                  "kind": "Name",
+                  "value": "data",
+                  "loc": {
+                    "start": 175,
+                    "end": 179
+                  }
+                },
+                "arguments": [],
+                "directives": [],
+                "selectionSet": {
+                  "kind": "SelectionSet",
+                  "selections": [
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "friends",
+                        "loc": {
+                          "start": 188,
+                          "end": 195
+                        }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "selectionSet": {
+                        "kind": "SelectionSet",
+                        "selections": [
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "id",
+                              "loc": {
+                                "start": 206,
+                                "end": 208
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 206,
+                              "end": 208
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "friends",
+                              "loc": {
+                                "start": 217,
+                                "end": 224
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "selectionSet": {
+                              "kind": "SelectionSet",
+                              "selections": [
+                                {
+                                  "kind": "Field",
+                                  "name": {
+                                    "kind": "Name",
+                                    "value": "id",
+                                    "loc": {
+                                      "start": 237,
+                                      "end": 239
+                                    }
+                                  },
+                                  "arguments": [],
+                                  "directives": [],
+                                  "loc": {
+                                    "start": 237,
+                                    "end": 239
+                                  }
+                                }
+                              ],
+                              "loc": {
+                                "start": 225,
+                                "end": 249
+                              }
+                            },
+                            "loc": {
+                              "start": 217,
+                              "end": 249
+                            }
+                          }
+                        ],
+                        "loc": {
+                          "start": 196,
+                          "end": 257
+                        }
+                      },
+                      "loc": {
+                        "start": 188,
+                        "end": 257
+                      }
+                    },
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "id",
+                        "loc": {
+                          "start": 264,
+                          "end": 266
+                        }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "loc": {
+                        "start": 264,
+                        "end": 266
+                      }
+                    }
+                  ],
+                  "loc": {
+                    "start": 180,
+                    "end": 272
+                  }
+                },
+                "loc": {
+                  "start": 175,
+                  "end": 272
+                }
+              },
+              {
+                "kind": "Field",
+                "name": {
+                  "kind": "Name",
+                  "value": "error",
+                  "loc": {
+                    "start": 277,
+                    "end": 282
+                  }
+                },
+                "arguments": [],
+                "directives": [],
+                "selectionSet": {
+                  "kind": "SelectionSet",
+                  "selections": [
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "type",
+                        "loc": {
+                          "start": 291,
+                          "end": 295
+                        }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "loc": {
+                        "start": 291,
+                        "end": 295
+                      }
+                    }
+                  ],
+                  "loc": {
+                    "start": 283,
+                    "end": 301
+                  }
+                },
+                "loc": {
+                  "start": 277,
+                  "end": 301
+                }
+              }
+            ],
+            "loc": {
+              "start": 169,
+              "end": 305
+            }
+          },
+          "loc": {
+            "start": 4,
+            "end": 305
+          }
+        }
+      ],
+      "loc": {
+        "start": 0,
+        "end": 307
+      }
+    },
+    "loc": {
+      "start": 0,
+      "end": 307
+    }
+  },
+  "variableValues": {}
+}

@@ -1,0 +1,299 @@
+{
+  "fieldName": "testRoute",
+  "fieldNodes": [
+    {
+      "kind": "Field",
+      "name": {
+        "kind": "Name",
+        "value": "testRoute",
+        "loc": {
+          "start": 4,
+          "end": 13
+        }
+      },
+      "arguments": [],
+      "directives": [],
+      "selectionSet": {
+        "kind": "SelectionSet",
+        "selections": [
+          {
+            "kind": "Field",
+            "name": {
+              "kind": "Name",
+              "value": "players",
+              "loc": {
+                "start": 20,
+                "end": 27
+              }
+            },
+            "arguments": [],
+            "directives": [],
+            "selectionSet": {
+              "kind": "SelectionSet",
+              "selections": [
+                {
+                  "kind": "Field",
+                  "name": {
+                    "kind": "Name",
+                    "value": "name",
+                    "loc": {
+                      "start": 36,
+                      "end": 40
+                    }
+                  },
+                  "arguments": [],
+                  "directives": [],
+                  "loc": {
+                    "start": 36,
+                    "end": 40
+                  }
+                },
+                {
+                  "kind": "Field",
+                  "name": {
+                    "kind": "Name",
+                    "value": "friends",
+                    "loc": {
+                      "start": 47,
+                      "end": 54
+                    }
+                  },
+                  "arguments": [],
+                  "directives": [],
+                  "selectionSet": {
+                    "kind": "SelectionSet",
+                    "selections": [
+                      {
+                        "kind": "Field",
+                        "name": {
+                          "kind": "Name",
+                          "value": "id",
+                          "loc": {
+                            "start": 65,
+                            "end": 67
+                          }
+                        },
+                        "arguments": [],
+                        "directives": [],
+                        "loc": {
+                          "start": 65,
+                          "end": 67
+                        }
+                      }
+                    ],
+                    "loc": {
+                      "start": 55,
+                      "end": 75
+                    }
+                  },
+                  "loc": {
+                    "start": 47,
+                    "end": 75
+                  }
+                }
+              ],
+              "loc": {
+                "start": 28,
+                "end": 81
+              }
+            },
+            "loc": {
+              "start": 20,
+              "end": 81
+            }
+          }
+        ],
+        "loc": {
+          "start": 14,
+          "end": 85
+        }
+      },
+      "loc": {
+        "start": 4,
+        "end": 85
+      }
+    }
+  ],
+  "returnType": "Game",
+  "parentType": "Query",
+  "path": {
+    "key": "testRoute"
+  },
+  "schema": {
+    "__validationErrors": [],
+    "__allowedLegacyNames": [],
+    "_queryType": "Query",
+    "_mutationType": "Mutation",
+    "_subscriptionType": "Subscription",
+    "_directives": [
+      "@skip",
+      "@include",
+      "@deprecated"
+    ],
+    "_typeMap": {
+      "Query": "Query",
+      "String": "String",
+      "ID": "ID",
+      "GamesReturn": "GamesReturn",
+      "Game": "Game",
+      "User": "User",
+      "Error": "Error",
+      "JSONObject": "JSONObject",
+      "UsersReturn": "UsersReturn",
+      "UserReturn": "UserReturn",
+      "Mutation": "Mutation",
+      "UserReturnJWT": "UserReturnJWT",
+      "GameReturn": "GameReturn",
+      "MoveInput": "MoveInput",
+      "Button": "Button",
+      "Action": "Action",
+      "MoveReturn": "MoveReturn",
+      "Move": "Move",
+      "Subscription": "Subscription",
+      "__Schema": "__Schema",
+      "__Type": "__Type",
+      "__TypeKind": "__TypeKind",
+      "Boolean": "Boolean",
+      "__Field": "__Field",
+      "__InputValue": "__InputValue",
+      "__EnumValue": "__EnumValue",
+      "__Directive": "__Directive",
+      "__DirectiveLocation": "__DirectiveLocation"
+    },
+    "_possibleTypeMap": {},
+    "_implementations": {}
+  },
+  "fragments": {},
+  "operation": {
+    "kind": "OperationDefinition",
+    "operation": "query",
+    "variableDefinitions": [],
+    "directives": [],
+    "selectionSet": {
+      "kind": "SelectionSet",
+      "selections": [
+        {
+          "kind": "Field",
+          "name": {
+            "kind": "Name",
+            "value": "testRoute",
+            "loc": {
+              "start": 4,
+              "end": 13
+            }
+          },
+          "arguments": [],
+          "directives": [],
+          "selectionSet": {
+            "kind": "SelectionSet",
+            "selections": [
+              {
+                "kind": "Field",
+                "name": {
+                  "kind": "Name",
+                  "value": "players",
+                  "loc": {
+                    "start": 20,
+                    "end": 27
+                  }
+                },
+                "arguments": [],
+                "directives": [],
+                "selectionSet": {
+                  "kind": "SelectionSet",
+                  "selections": [
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "name",
+                        "loc": {
+                          "start": 36,
+                          "end": 40
+                        }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "loc": {
+                        "start": 36,
+                        "end": 40
+                      }
+                    },
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "friends",
+                        "loc": {
+                          "start": 47,
+                          "end": 54
+                        }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "selectionSet": {
+                        "kind": "SelectionSet",
+                        "selections": [
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "id",
+                              "loc": {
+                                "start": 65,
+                                "end": 67
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 65,
+                              "end": 67
+                            }
+                          }
+                        ],
+                        "loc": {
+                          "start": 55,
+                          "end": 75
+                        }
+                      },
+                      "loc": {
+                        "start": 47,
+                        "end": 75
+                      }
+                    }
+                  ],
+                  "loc": {
+                    "start": 28,
+                    "end": 81
+                  }
+                },
+                "loc": {
+                  "start": 20,
+                  "end": 81
+                }
+              }
+            ],
+            "loc": {
+              "start": 14,
+              "end": 85
+            }
+          },
+          "loc": {
+            "start": 4,
+            "end": 85
+          }
+        }
+      ],
+      "loc": {
+        "start": 0,
+        "end": 87
+      }
+    },
+    "loc": {
+      "start": 0,
+      "end": 87
+    }
+  },
+  "variableValues": {}
+}

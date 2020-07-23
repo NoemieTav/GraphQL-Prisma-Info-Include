@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "./build/",
+    "sourceMap": true,
+    "lib": [
+      "esnext.asynciterable",
+      "esnext",
+      "dom"
+    ],
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*"]
+}

@@ -1,0 +1,58 @@
+type Mutation {
+  createDraft(authorEmail: String, content: String, title: String!, name: String): PostData
+  publish(id: Int, name: String): PostError
+  signupUser(data: UserCreateInput!, name: String): User!
+}
+
+type PostData {
+  data: Post
+  errors: [Error]
+}
+
+union PostError = Post | Error
+
+type Error {
+  message: String
+}
+
+type Post {
+  author: User
+  content: String
+  id: Int!
+  published: Boolean!
+  title: String!
+}
+
+input PostCreateManyWithoutAuthorInput {
+  connect: [PostWhereUniqueInput!]
+  create: [PostCreateWithoutAuthorInput!]
+}
+
+input PostCreateWithoutAuthorInput {
+  content: String
+  published: Boolean
+  title: String!
+}
+
+input PostWhereUniqueInput {
+  id: Int
+}
+
+type Query {
+  feed: [Post!]!
+  filterPosts(searchString: String): [Post!]!
+  post(where: PostWhereUniqueInput!): Post
+}
+
+type User {
+  email: String!
+  id: Int!
+  name: String
+  posts: [Post!]!
+}
+
+input UserCreateInput {
+  email: String!
+  name: String
+  posts: PostCreateManyWithoutAuthorInput
+}
