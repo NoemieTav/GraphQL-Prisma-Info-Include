@@ -1,4 +1,4 @@
-const isObject = require("lodash.isobject");
+const isObject = require("../../src/build");
 import * as fs from "fs";
 import {ASTNode, graphql, GraphQLSchema, print} from "graphql";
 import {importSchema} from "graphql-import";
