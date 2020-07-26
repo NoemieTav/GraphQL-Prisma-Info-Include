@@ -35,13 +35,13 @@ describe("test", function () {
     const data = infoToInclude({
       type: "union",
       key: "Post",
+      rootInclude: false,
     }, publishTest as unknown as GraphQLResolveInfo);
     chai.assert.deepEqual(data, {author: true});
   });
   it("should test root", function () {
     const data = infoToInclude({
       type: "root",
-      rootInclude: true,
     }, root as unknown as GraphQLResolveInfo);
     chai.assert.deepEqual(data, {"include": {"players": {"include": {"friends": true}}}});
   });
@@ -50,6 +50,7 @@ describe("test", function () {
     const data = infoToInclude({
       type: "root",
       isSelect: false,
+      rootInclude: false,
     }, signupTest as unknown as GraphQLResolveInfo);
     chai.assert.deepEqual(data, {posts: true});
   });
@@ -58,7 +59,6 @@ describe("test", function () {
       type: "union",
       key: "Trip",
       isSelect: true,
-      rootInclude: true,
     }, union as unknown as GraphQLResolveInfo);
     chai.assert.deepEqual(data, {
       "select": {
