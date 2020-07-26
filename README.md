@@ -54,7 +54,7 @@ interface InfoIncludeParams {
 | key | String | null | the key to get the data when type is not `root` |
 | rootInclude | Boolean | true | **on false be careful** if empty can cause prisma error |
 | isSelect | Boolean | false | on true will select only fields required on false will select all data of the required types|
-| type | String | None | Required see below |
+| type | String | None | Used to know which data type is return is returned see below |
 
 ##### root
 
