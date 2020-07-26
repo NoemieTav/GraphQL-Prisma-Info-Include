@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import {infoToInclude} from "../../src/main";
+import {infoToInclude} from "../../src";
 
 export const resolvers = {
   PostError: {__resolveType: (a) => {
