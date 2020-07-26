@@ -38,15 +38,27 @@ const resolvers = {
 
 #### `infoToInclude(params: InfoIncludeParams, info: GraphQLResolveInfo)`
 
-
 `info` parameter is the fourth argument given by GraphQL resolvers. It can accept the following fields:
 
-##### type 
+```ts
+interface InfoIncludeParams {
+  key?: string | string[]
+  type: 'root' | 'union' | 'key'
+  rootInclude?: boolean,
+  isSelect?: boolean,
+}
+```
 
-This argument is required. 
+| Key  | Type | Default | Notes |
+| ---- | ---- | ------- | ----- |
+| key | String | null | the key to get the data when type is not `root` |
+| rootInclude | Boolean | true | **on false be careful** if empty can cause prisma error |
+| isSelect | Boolean | false | on true will select only fields required on false will select all data of the required types|
+| type | String | None | Required see below |
 
-###### root
+##### root
 
+Example:
 ```graphql
 # The definition
 type Mutation {
@@ -71,8 +83,9 @@ const resolvers = {
 }
 ```
 
-###### key
+##### key
 
+Example:
 ```graphql
 # The definition
 type Mutation {
@@ -105,8 +118,9 @@ const resolvers = {
 }
 ```
 
-###### union
+##### union
 
+Example:
 ```graphql
 # The definition
 union UserReturn = User | Error
@@ -136,9 +150,3 @@ const resolvers = {
   }
 }
 ```
-
-| Key  | Type | Default | Notes |
-| ---- | ---- | ------- | ----- |
-| key | String | null | the key to get the data when type is not `root` |
-| rootInclude | Boolean | true | **on false be careful** if empty can cause prisma error |
-| isSelect | Boolean | false | on true will select only fields required on false will select all data of the required types|

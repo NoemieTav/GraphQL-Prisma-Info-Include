@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "from your query or mutation's info argument to prisma include",
   "prepublish": "tsc",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "types": "build/index.d.ts",
   "main": "build/index.js",
   "scripts": {
