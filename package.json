@@ -2,6 +2,8 @@
   "name": "graphql-prisma-info-include",
   "version": "1.0.0",
   "description": "from your query or mutation's info argument to prisma include",
+  "prepublish": "tsc",
+  "types": "build/index.d.ts",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc",
@@ -17,7 +19,7 @@
     "info",
     "include"
   ],
-  "author": "Noémie Taviere",
+  "author": "NoTa",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NoemieTav/GraphQL-Prisma-Info-Include/issues"

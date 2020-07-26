@@ -105,3 +105,5 @@ describe("generate a file", function () {
     });
   });
 });
+
+context.prisma.disconnect();

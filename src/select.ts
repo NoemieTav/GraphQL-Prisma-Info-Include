@@ -1,7 +1,7 @@
 import type {GraphQLResolveInfo, SelectionNode} from 'graphql';
-import {Params} from ".";
+import {InfoIncludeParams} from ".";
 
-export function selectSelection(info: GraphQLResolveInfo, params: Params): SelectionNode | undefined {
+export function selectSelection(info: GraphQLResolveInfo, params: InfoIncludeParams): SelectionNode | undefined {
     const root = info.operation.selectionSet.selections[0]
     if (params.type === "root")
         return root;

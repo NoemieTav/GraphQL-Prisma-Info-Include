@@ -1,5 +1,5 @@
 import {SelectionNode} from "graphql";
-import {Params} from ".";
+import {InfoIncludeParams} from ".";
 
 export interface selection {
   select: {
@@ -23,7 +23,7 @@ export function isEmpty(obj): boolean {
 
 export type includeReturn = selection | include | withoutMain | {}
 
-export function fillSelect(selection: SelectionNode, params: Params): includeReturn {
+export function fillSelect(selection: SelectionNode, params: InfoIncludeParams): includeReturn {
   const obj = params.isSelect ? {select: {}} : {include: {}};
   if (!("selectionSet" in selection)) return obj;
   selection.selectionSet.selections.forEach((a) => {
