@@ -28,7 +28,7 @@ export const resolvers = {
       if (args.name) fs.writeFileSync(`${args.name}.json`, JSON.stringify(info));
       return ctx.prisma.user.create({
         data: args.data,
-        include: infoToInclude({type: "root", isSelect: false}, info),
+        include: infoToInclude({type: "root", isSelect: false, rootInclude: false}, info),
       });
     },
     createDraft: async (_, {title, content, authorEmail, name}, ctx, info) => {
@@ -43,7 +43,7 @@ export const resolvers = {
             connect: {email: authorEmail},
           },
         },
-          ...infoToInclude({type: "key", key: "data", rootInclude: true, isSelect: true}, info)
+          ...infoToInclude({type: "key", key: "data", isSelect: true}, info)
       })};
     },
     publish: async (_, {id, name}, ctx, info) => {
