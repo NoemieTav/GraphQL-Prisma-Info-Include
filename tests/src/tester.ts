@@ -1,4 +1,3 @@
-const isObject = require("../../src/build");
 import * as fs from "fs";
 import {ASTNode, graphql, GraphQLSchema, print} from "graphql";
 import {importSchema} from "graphql-import";
@@ -87,7 +86,7 @@ export class Tester {
   }
 
   call(query, rootValue, contextValue, variableValues) {
-    if (isObject(query)) query = print(query);
+    if (typeof query === 'object' && query !== null) query = print(query);
     return graphql(this.schema, query, rootValue, contextValue, variableValues);
   }
 }
