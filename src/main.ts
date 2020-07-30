@@ -4,6 +4,7 @@ import {selectSelection} from "./select";
 import {fillSelect, includeReturn} from "./build";
 
 export function infoToInclude(params: InfoIncludeParams, info: GraphQLResolveInfo): includeReturn {
+    if (!info) return {}
     const data = selectSelection(info, params);
     if (!data) return {}
     const ret = fillSelect(data, params);
